@@ -1,8 +1,8 @@
-FROM quay.io/ibmgaragecloud/node
+FROM quay.io/upslopeio/node-alpine
 
 WORKDIR /usr/src/app
 
-COPY package.json ./
+COPY package*.json ./
 
 RUN npm ci
 
